@@ -18,7 +18,7 @@ const Users = () => {
     password: '',
     answer: ''
   });
-   const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app/";
+   const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app";
 
   useEffect(() => {
     if (auth?.token) {

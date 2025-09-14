@@ -16,7 +16,7 @@ const Products = () => {
   const [form] = Form.useForm();
   const [searchTerm, setSearchTerm] = useState("");
 
-   const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app/";
+   const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app";
 
   const getAllProducts = async () => {
     try {

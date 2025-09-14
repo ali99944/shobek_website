@@ -14,7 +14,7 @@ const Login = () => {
   const location = useLocation();
   const [auth, setAuth] = useAuth();
   const { t, i18n } = useTranslation();
-  const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app/";
+  const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app";
   const isRTL = i18n.language === 'ar';
 
   const handleSubmit = async (e) => {

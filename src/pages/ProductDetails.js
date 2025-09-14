@@ -14,7 +14,7 @@ const ProductDetails = () => {
     const [relatedProducts, setRelatedProducts] = useState([]);
     const navigate = useNavigate();
     const { t, i18n } = useTranslation();
-    const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app/";
+    const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app";
     const isRTL = i18n.language === 'ar';
     const currency = i18n.language === 'ar' ? 'جنية' : 'EGP';
     const getProduct = async () => {
