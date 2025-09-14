@@ -56,27 +56,52 @@ const Myheader = () => {
 
     return (
         <>
-            {/* Top Header Bar */}
-            <div className="top-header-bar">
-                <div className="container-fluid">
-                    <div className="row align-items-center">
-                        <div className="col-md-6">
+        <div style={{
+            background: '#e3f2fd'
+        }}>
+            <div style={{
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                marginBottom: '1px',
+                padding: '8px',
+            }}>
                             <div className="top-header-left">
                                 <span className="welcome-text">
                                     {isRTL ? 'مرحباً بكم في شبيك لبيك' : 'Welcome to shopaik lopaik'}
                                 </span>
                             </div>
                         </div>
-                        <div className="col-md-6">
-                            <div className="top-header-right">
-                                <LanguageSwitcher />
+        </div>
+            {/* Top Header Bar */}
+            <div className="top-header-bar" style={{
+                background: 'var(--primary-blue)',
+                color: 'white !important'
+            }}>
+                <div className="container-fluid">
+                    <div className="row align-items-center flex-column flex-md-row">
+                        
+                        <div className="col-12  d-flex justify-content-end">
+                            <div className="top-header-right d-flex justify-content-between w-100">
+                                <Link to="/cart" className="action-btn cart-btn">
+                                    <Badge count={cart?.length} showZero>
+                                        <GiShoppingBag className="action-icon" style={{
+                                            color: 'white'
+                                        }} />
+                                        {/* <span className="action-text">
+                                            {t('navbar.cart')}
+                                        </span> */}
+                                    </Badge>
+                                </Link>
+                                <div className='d-flex gap-4'>
+                                    <LanguageSwitcher />
                                 {!auth.user ? (
                                     <div className="auth-links">
-                                        <Link to="/login" className="auth-link">
+                                        <Link to="/login" className="auth-link me-2">
                                             <FaUser className="me-1" />
                                             {t('navbar.login')}
                                         </Link>
-                                        <span className="separator">|</span>
+                                        <span className="separator mx-2">|</span>
                                         <Link to="/register" className="auth-link">
                                             {t('navbar.register')}
                                         </Link>
@@ -104,6 +129,7 @@ const Myheader = () => {
                                         </div>
                                     </div>
                                 )}
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -111,16 +137,20 @@ const Myheader = () => {
             </div>
 
             {/* Main Header */}
-            <header className="main-header">
+            <header className="main-header" style={{ backgroundColor: '#e3f2fd' }}>
                 <div className="container-fluid">
-                    <div className="row align-items-center">
+                    <div className="row align-items-center justify-content-center">
                         <div className="col-lg-9 col-md-8">
                             <div className="header-search">
                                 <SearchInput />
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-4">
-                            <div className="header-actions">
+                        <div className="col-lg-3 col-md-4 d-flex justify-content-center">
+                            <div className="header-actions d-flex align-items-center" style={{
+                                width: '100%',
+                                display: 'flex',
+                                justifyContent: 'center'
+                            }}>
                                 <Link to="/" className="action-btn home-btn">
                                     <FaHome className="action-icon" />
                                     <span className="action-text">
@@ -167,14 +197,7 @@ const Myheader = () => {
                                         {isRTL ? 'دعم العملاء' : 'Customer Support'}
                                     </span>
                                 </Link>
-                                <Link to="/cart" className="action-btn cart-btn">
-                                    <Badge count={cart?.length} showZero>
-                                        <GiShoppingBag className="action-icon" />
-                                        <span className="action-text">
-                                            {t('navbar.cart')}
-                                        </span>
-                                    </Badge>
-                                </Link>
+                                
                             </div>
                         </div>
                     </div>
