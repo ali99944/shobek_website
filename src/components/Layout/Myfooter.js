@@ -35,10 +35,10 @@ const Myfooter = () => {
                   }
                 </p>
                 <div className='social-links'>
-                  <a href="#" className='social-link facebook' aria-label="Facebook">
+                  <a href="https://www.facebook.com/share/1J1CFzdwVE/" className='social-link facebook' aria-label="Facebook">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#" className='social-link instagram' aria-label="Instagram">
+                  <a href="https://www.instagram.com/shopaik_lopaik?igsh=aGhwcXpubjg2cTFz" className='social-link instagram' aria-label="Instagram">
                     <i className="fab fa-instagram"></i>
                   </a>
                   <a href="#" className='social-link twitter' aria-label="Twitter">
@@ -112,7 +112,7 @@ const Myfooter = () => {
                   </div>
                   <div className='contact-item'>
                     <i className="fab fa-facebook-f"></i>
-                    <a href="https://www.facebook.com/shopeklopek" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/share/1J1CFzdwVE/" target="_blank" rel="noopener noreferrer">
                       /shopaiklopaik
                     </a>
                   </div>
