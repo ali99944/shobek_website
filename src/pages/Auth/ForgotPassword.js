@@ -12,7 +12,7 @@ const ForgotPassword = () => {
   const [answer, setAnswer] = useState("");
   const navigate = useNavigate();
   const { t, i18n } = useTranslation();
-  const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app";
+  const backendUrl = process.env.BACKEND_URL || "https://shobek-server-mu.vercel.app";
   const isRTL = i18n.language === 'ar';
 
   const handleSubmit = async (e) => {

@@ -16,7 +16,7 @@ const CreateCategory = () => {
   const [updatedname, setUpdatedName] = useState("");
   const [updatedDeliveryDuration, setUpdatedDeliveryDuration] = useState(1440); // Default 24 hours in minutes
   const [updatedPhoto, setUpdatedPhoto] = useState(null);
-  const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app";
+  const backendUrl = process.env.BACKEND_URL || "https://shobek-server-mu.vercel.app";
 
   const handlesubmit = async (e) => {
     e.preventDefault();

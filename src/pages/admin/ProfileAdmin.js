@@ -13,7 +13,7 @@ const ProfileAdmin = () => {
   const [address, setAddress] = useState("");
   const [answer, setAnswer] = useState("");
   const [auth, setAuth] = useAuth();
-   const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app";
+   const backendUrl = process.env.BACKEND_URL || "https://shobek-server-mu.vercel.app";
 
   useEffect(() => {
     const { name, email, phone, address } = auth?.user;

@@ -10,7 +10,7 @@ const Orders = () => {
   const [orders, setOrders] = useState([]);
   const [auth] = useAuth();
   const { t, i18n } = useTranslation();
-  const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app";
+  const backendUrl = process.env.BACKEND_URL || "https://shobek-server-mu.vercel.app";
   const isRTL = i18n.language === 'ar';
   const currency = i18n.language === 'ar' ? 'جنية' : 'EGP';
 

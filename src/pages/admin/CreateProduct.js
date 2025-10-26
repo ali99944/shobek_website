@@ -19,7 +19,7 @@ const CreateProduct = () => {
   const [shipping, setShipping] = useState(false);
   const [photo, setPhoto] = useState(null);
   const [photoPreview, setPhotoPreview] = useState(null);
-  const backendUrl = process.env.BACKEND_URL || "https://shobek-server.vercel.app";
+  const backendUrl = process.env.BACKEND_URL || "https://shobek-server-mu.vercel.app";
 
   // Fetch all categories
   const getallCategories = async () => {

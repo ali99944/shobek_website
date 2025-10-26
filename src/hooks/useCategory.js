@@ -3,7 +3,7 @@ import axios from "axios";
 
 export default function useCategory() {
     const [categories, setCategories] = useState([]);
-    const backendUrl = process.env.REACT_APP_BACKEND_URL || process.env.BACKEND_URL || "https://shobek-server.vercel.app";
+    const backendUrl = process.env.REACT_APP_BACKEND_URL || process.env.BACKEND_URL || "https://shobek-server-mu.vercel.app";
 
     // Fallback categories in case the API fails
     const fallbackCategories = [
