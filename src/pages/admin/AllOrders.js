@@ -93,6 +93,8 @@ const AllOrders = () => {
         return `${backendUrl}/api/v1/product/get-product-photo/${productId}`;
     };
 
+    console.log(filteredOrders)
+
     return (
         <Mylayout title={"Dashboard - All Orders"}>
             <div className="container-fluid m-3 p-3">
@@ -183,7 +185,9 @@ const AllOrders = () => {
                                                         className="me-1"
                                                     />
                                                     <div>
-                                                        <span>{product.name}</span>
+                                                        <span>{product.name} x {
+                                                            order.quantities.find(q => q.productId == product._id).quantity.toString()    
+                                                        }</span>
                                                         <br />
                                                         <span>
                                                           {isRTL ? (
